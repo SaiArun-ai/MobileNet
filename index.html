@@ -1,0 +1,62 @@
+
+<html>
+  <head>
+    <title>MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+      <div class = "HeaderDiv">
+        <label id = "HeaderText">Image Identifier</label>
+        <img src = "logo.gif" width = 100 height = 100>
+      </div>
+      
+      
+      <section class = "col-lg-6 col-md-8 col-sm-12" id = "WebcamDiv">
+        <label>Webcam View</label>
+        <div id = "Camera"></div>
+        <button id = "CaptureImage" onclick="CaptureImage()" class = "FontSize btn btn-danger">Capture Image</button>
+      </section>
+      <span>
+        <section class = "col-lg- 6 col-md-8 col-sm-12" id = "OP">
+          <label>Taken Image</label>
+          <div id = "Result"></div>
+          <button id = "Identify" onclick="Identify()" class = "btn btn-success">Identify Image</button>
+        </section></span>
+      <div id = "FiniResult">
+        <img src = "blub.gif" width = 100 height = 100>
+        <label id = "WordLaResult"></label>
+      </div>
+      <footer>
+        <br>
+        <br>
+        <br>
+
+        <label>Developed By Sai Arun</label>
+      </footer>
+    </center>
+
+
+    
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+
