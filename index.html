@@ -7,7 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -24,7 +24,7 @@
         <section id = "WebcamDiv">
           <label>Webcam View</label>
           <div id = "Camera"></div>
-          <button id = "CaptureImage" onclick="CaptureImage()" class = "FontSize btn btn-danger">Capture Image</button>
+          <button onclick="CaptureImage()" class = "FontSize btn btn-danger">Capture Image</button>
         </section>
         <span>
         <br>
@@ -33,15 +33,18 @@
           <section id = "OP">
             <label>Taken Image</label>
             <div id = "Result"></div>
-            <button id = "Identify" onclick="Identify()" class = "btn btn-success">Identify Image</button>
+            <button onclick="Identify()" class = "btn btn-success">Identify Image</button>
           </section>
         </span>
       </div>
       
-      <div id = "FiniResult">
-        <img src = "blub.gif" width = 100 height = 100>
-        <div id = "WordLaResult"></div>
-      </div>
+      
+        
+        <div id = FiniResult>
+          <img src = "blub.gif" width = 100 height = 100>
+          <div id = "WordLaResult"></div>
+        </div>
+        
       <footer>
         <br>
         <br>

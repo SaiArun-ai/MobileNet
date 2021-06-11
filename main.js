@@ -2,7 +2,6 @@ Webcam.set({
     width:256,
     height:256,
     image_format:"png",
-    img_quality:10,
     constraints:{
         facingMode:"environment"
     }
@@ -23,12 +22,12 @@ function modelLoaded(){
 
 }
 function Identify(){
-    image = document.getElementById("ig").value;
-    Classifier.classify(image,gotresult);
+    img1 = document.getElementById("ig");
+    Classifier.classify(img1, gotResult);
 }
 
 
-function gotresult(error,results){
+function gotResult(error, results){
     if(error){
         console.error(error);
     }else{
